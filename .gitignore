@@ -65,6 +65,12 @@ sysinfo.txt
 google-services.json
 GoogleService-Info.plist
 
+# Vuforia package
+*.tgz
+
+# Firebase plugins
+*.bundle
+
 # Crashlytics generated file
 crashlytics-build.properties
 
