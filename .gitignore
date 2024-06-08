@@ -61,6 +61,10 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+# Firebase config files
+google-services.json
+GoogleService-Info.plist
+
 # Crashlytics generated file
 crashlytics-build.properties
 
