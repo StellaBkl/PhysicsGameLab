@@ -1,13 +1,10 @@
 using Firebase.Firestore;
 using System;
+using UnityEngine;
 
 [FirestoreData]
 public struct Grades
 {
-    [FirestoreProperty]
-    public string chapterId { get; set; }
-    [FirestoreProperty]
-    public string chapterName { get; set; }
     [FirestoreProperty]
     public DateTime createdAt { get; set; }
     [FirestoreProperty]
@@ -15,5 +12,11 @@ public struct Grades
     [FirestoreProperty]
     public Student student { get; set; }
     [FirestoreProperty]
-    public Exercise exercise { get; set; }
+    public Quiz quiz { get; set; }
+
+    void SetGrade(float value)
+    {
+        // Round to 1 decimal place before assignment
+        grade = Mathf.Round(value * 10f) / 10f;
+    }
 }
