@@ -46,8 +46,6 @@ The main menu provides the following options:
 - Students can log in using their credentials, and they can log out when finished.
 - They can revisit the app at any time and continue from where they left off.
 
----
-
 ## Technologies Used
 - **Unity**: Game engine used to develop the app and manage AR content.
 - **C#**: The primary programming language used for scripting in Unity.
