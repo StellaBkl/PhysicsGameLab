@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="lightsource" size="0.070000 0.053667" />
+    <ImageTarget name="reflection" size="0.070000 0.047639" />
+    <ImageTarget name="battery" size="0.070000 0.050501" />
+    <ImageTarget name="batteries" size="0.070000 0.032278" />
+    <ImageTarget name="transparent" size="0.070000 0.070000" />
+    <ImageTarget name="shadow" size="0.070000 0.049972" />
+    <ImageTarget name="conductors-insulators" size="0.070000 0.049331" />
+    <ImageTarget name="circuit" size="0.070000 0.060839" />
+  </Tracking>
+</QCARConfig>

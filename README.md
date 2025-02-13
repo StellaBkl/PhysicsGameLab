@@ -1,32 +1,61 @@
-# PhysicsGameLabUnityApp
+# PhysicsGameLab
 ### Student Assessment AR App
 
-## Overview
+**PhysicsGameLab** is an Android app developed with Unity and C# that aims to assess students through augmented reality (AR) games linked to quizzes created by their teachers. The app utilizes **Vuforia** to recognize image targets and display AR content, enhancing the learning experience. All student data, including quiz grades and personal information, is stored in **Firebase**, making it easily accessible for teachers from their dedicated app [**PhysicsGameLabforTeachers**](https://github.com/StellaBkl/PhysicsGameLab).
 
-The PhysicsGameLab App is a cutting-edge educational application designed to engage 4th-grade students in a fun and interactive learning environment. Leveraging Unity, Vuforia, and Firebase technologies, this app provides a unique platform for students to enhance their understanding of school lessons through augmented reality (AR) games.
+The app is designed for students in 5th grade to engage in interactive AR games as part of their assessments, contributing to a more dynamic and fun learning process.
 
-## Key Features
+## Features
 
-- **Interactive Learning:** The app allows students to log in and participate in a variety of AR games carefully curated for each lesson. This interactive approach not only reinforces classroom teachings but also makes the learning process enjoyable and engaging.
+### 1. **User Authentication**
+- Students receive login credentials from their teachers (username and student ID).
+- They must sign up by filling in the student ID and creating a password.
+- Once registered, students can log in using their username and newly created password.
 
-- **Scoring and Grading System:** Students receive grades and accumulate points based on their performance in the AR games. This gamified system adds an element of competition and motivation, encouraging students to actively participate in their own educational journey.
+### 2. **Home Page**
+- After logging in, students are taken to the **Main Menu**, where they can navigate through the app's features.
 
-- **Firebase Integration:** All student grades and points are securely stored in Firebase Firestore, ensuring real-time and reliable data management. This integration allows for seamless synchronization of student progress across devices and provides a centralized database for educators to track and assess student performance.
+### 3. **Main Menu**
+The main menu provides the following options:
 
-- **Class Scoreboard:** The app features a dynamic scoreboard that showcases the points earned by each student in a class. This scoreboard fosters a sense of healthy competition and encourages students to strive for academic excellence.
+- **Profile**:
+  - Students can view their personal profile, including:
+    - Points accumulated from completed quizzes.
+    - Basic personal information.
+    - Option to change their password.
+
+- **Quizzes**:
+  - Students can access quizzes assigned by their teacher.
+  - Each quiz contains multiple AR-based exercises (games) that students must complete to receive a final grade for the quiz.
+  - Quizzes are fetched from **Firebase**, and only **enabled quizzes** created by the teacher are visible to students.
+
+- **Scoreboard**:
+  - Students can view the leaderboard, where they can see their scores compared to their classmates (or other 5th-grade students).
+  - This feature allows students to compete for the highest points and encourages friendly competition.
+
+### 4. **AR Games**
+- Quizzes contain **AR exercises** powered by **Vuforia**.
+  - Students must use their camera to recognize image targets, triggering interactive AR content.
+  - Successfully completing the AR games is part of the assessment, and points are awarded based on performance.
+
+### 5. **Firebase Integration**
+- All quiz grades and student data (including points) are stored in **Firebase**.
+- Teachers can view students' scores and progress through the **PhysicsGameLabforTeachers** app.
+
+### 6. **Login/Logout**
+- Students can log in using their credentials, and they can log out when finished.
+- They can revisit the app at any time and continue from where they left off.
 
 ## Technologies Used
+- **Unity**: Game engine used to develop the app and manage AR content.
+- **C#**: The primary programming language used for scripting in Unity.
+- **Vuforia**: AR platform used for recognizing image targets and displaying AR content for quizzes.
+- **Firebase**: Backend service for user authentication, storing student data, and managing quiz scores.
 
-- **Unity:** The leading game development engine provides a robust environment for creating immersive AR experiences tailored to educational content.
+## Installation
 
-- **Vuforia:** The AR platform enhances the app's capabilities by seamlessly integrating digital content with the physical world, creating an interactive and engaging learning experience.
+### Prerequisites
+- Install **Unity** and set up the Android build environment.
+- Set up a **Firebase** project and configure authentication and Firestore Database.
+- **Vuforia SDK** should be imported into the Unity project for AR functionality.
 
-- **Firebase:** Leveraging Firebase for real-time data storage ensures reliability, scalability, and accessibility for both students and educators.
-
-## How to Use
-
-[Include clear and concise instructions on how to set up and use the application. This may include prerequisites, installation steps, and any additional configurations.]
-
-## Acknowledgements
-
-[Give credit to any third-party libraries, resources, or individuals who contributed to the project.]

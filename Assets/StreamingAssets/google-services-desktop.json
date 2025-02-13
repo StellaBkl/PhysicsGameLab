@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "757316625143",
+    "firebase_url": "https://physicsgamelab-e100b-default-rtdb.firebaseio.com",
+    "project_id": "physicsgamelab-e100b",
+    "storage_bucket": "physicsgamelab-e100b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757316625143:android:747a78735043783819a9f2",
+        "android_client_info": {
+          "package_name": "com.ARGames.PhysicsGames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757316625143-v9m0om151suumjkur5ddg9rg4s2pgk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoFyecu7GUX6fsXdXYnVXvpZ_A8MQIl-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757316625143-v9m0om151suumjkur5ddg9rg4s2pgk3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757316625143:android:27097b5c62ed62d819a9f2",
+        "android_client_info": {
+          "package_name": "com.argames.physicsgamelab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757316625143-v9m0om151suumjkur5ddg9rg4s2pgk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoFyecu7GUX6fsXdXYnVXvpZ_A8MQIl-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757316625143-v9m0om151suumjkur5ddg9rg4s2pgk3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757316625143:android:3035547a4905e54e19a9f2",
+        "android_client_info": {
+          "package_name": "com.argames.testsearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757316625143-v9m0om151suumjkur5ddg9rg4s2pgk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoFyecu7GUX6fsXdXYnVXvpZ_A8MQIl-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757316625143-v9m0om151suumjkur5ddg9rg4s2pgk3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
