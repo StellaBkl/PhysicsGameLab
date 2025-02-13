@@ -1,7 +1,7 @@
 # PhysicsGameLab
 ### Student Assessment AR App
 
-**PhysicsGameLab** is an Android app developed with Unity and C# that aims to assess students through augmented reality (AR) games linked to quizzes created by their teachers. The app utilizes **Vuforia** to recognize image targets and display AR content, enhancing the learning experience. All student data, including quiz grades and personal information, is stored in **Firebase**, making it easily accessible for teachers from their dedicated app [PhysicsGameLabforTeachers](https://github.com/StellaBkl/PhysicsGameLab).
+**PhysicsGameLab** is an Android app developed with Unity and C# that aims to assess students through augmented reality (AR) games linked to quizzes created by their teachers. The app utilizes **Vuforia** to recognize image targets and display AR content, enhancing the learning experience. All student data, including quiz grades and personal information, is stored in **Firebase**, making it easily accessible for teachers from their dedicated app [PhysicsGameLab for Teachers](https://github.com/StellaBkl/PhysicsGameLab).
 
 The app is designed for students in 5th grade to engage in interactive AR games as part of their assessments, contributing to a more dynamic and fun learning process.
 
