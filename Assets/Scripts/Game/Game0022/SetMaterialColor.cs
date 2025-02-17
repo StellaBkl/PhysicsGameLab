@@ -13,6 +13,7 @@ public class SetMaterialColor : MonoBehaviour
 
     public void OnInventoryClick()
     {
+        Debug.Log(SelectedItems.text);
         if (SelectedItems.text == "")
         { 
             gameObject.SetActive(false);
@@ -22,7 +23,7 @@ public class SetMaterialColor : MonoBehaviour
         InitializeItemType();
         gameObject.SetActive(true);
         SelectType.SetActive(true);
-        
+
         Renderer renderer = gameObject.GetComponent<Renderer>();
         Material newMaterial = Resources.Load<Material>(MaterialPath + SelectedItems.text);
 

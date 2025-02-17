@@ -406,7 +406,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 82c02ceee1d20d040905d2368a2fc9c7, type: 3}
-    m_FontSize: 35
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
@@ -1025,7 +1025,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 82c02ceee1d20d040905d2368a2fc9c7, type: 3}
-    m_FontSize: 35
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
@@ -3698,7 +3698,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3803867566293339415}
+      - m_Target: {fileID: 2394957351549861875}
         m_TargetAssemblyTypeName: SetMaterialColor, Assembly-CSharp
         m_MethodName: OnInventoryClick
         m_Mode: 1
@@ -4069,7 +4069,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.84313726, b: 0.3372549, a: 1}
-  m_Intensity: 4.5
+  m_Intensity: 4
   m_Range: 0.8
   m_SpotAngle: 70.36677
   m_InnerSpotAngle: 38
@@ -4360,7 +4360,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3803867566293339415}
+      - m_Target: {fileID: 2394957351549861875}
         m_TargetAssemblyTypeName: SetMaterialColor, Assembly-CSharp
         m_MethodName: OnInventoryClick
         m_Mode: 1
@@ -5058,7 +5058,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3803867566293339415}
+      - m_Target: {fileID: 2394957351549861875}
         m_TargetAssemblyTypeName: SetMaterialColor, Assembly-CSharp
         m_MethodName: OnInventoryClick
         m_Mode: 1
@@ -6414,7 +6414,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 82c02ceee1d20d040905d2368a2fc9c7, type: 3}
-    m_FontSize: 35
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
@@ -6561,7 +6561,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3803867566293339415}
+      - m_Target: {fileID: 2394957351549861875}
         m_TargetAssemblyTypeName: SetMaterialColor, Assembly-CSharp
         m_MethodName: OnInventoryClick
         m_Mode: 1
@@ -9650,7 +9650,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3803867566293339415}
+      - m_Target: {fileID: 2394957351549861875}
         m_TargetAssemblyTypeName: SetMaterialColor, Assembly-CSharp
         m_MethodName: OnInventoryClick
         m_Mode: 1
@@ -13791,7 +13791,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3803867566293339415}
+      - m_Target: {fileID: 2394957351549861875}
         m_TargetAssemblyTypeName: SetMaterialColor, Assembly-CSharp
         m_MethodName: OnInventoryClick
         m_Mode: 1

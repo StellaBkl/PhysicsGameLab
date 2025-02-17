@@ -1,4 +1,4 @@
-using Firebase.Extensions;
+﻿using Firebase.Extensions;
 using Firebase.Firestore;
 using SojaExiles;
 using System;
@@ -10,6 +10,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UIElements;
+using Vuforia;
 using static UnityEngine.GraphicsBuffer;
 
 public class HandleExerciseActions : MonoBehaviour
@@ -50,20 +51,52 @@ public class HandleExerciseActions : MonoBehaviour
         string prefabPath = "GamePrefabs/Game" + exerciseId;
         GameObject prefab = Resources.Load<GameObject>(prefabPath);
         GameObject quizTemplate = QuizCanvas.transform.Find("GameTemplate").gameObject;
-
+        
         if (prefab != null)
         {
+            //Unregister the old target
+            StartCoroutine(ResetVuforiaTracking());
+
             if (currentInstance != null) Destroy(currentInstance);
 
-            GameObject newInstance;
-            newInstance = Instantiate(prefab, quizTemplate.transform.position, quizTemplate.transform.rotation);
-            newInstance.transform.SetParent(quizTemplate.transform, false);
-            newInstance.transform.localPosition = Vector3.zero;
-            newInstance.transform.localScale = Vector3.one;
-            newInstance.name = prefab.name;
-            newInstance.SetActive(activateInstance);
+            // Wait before instantiating a new target
+            StartCoroutine(InstantiateNewPrefab(currentInstance, activateInstance, prefab, quizTemplate));
 
-            currentInstance = newInstance;
+            //GameObject newInstance;
+            //newInstance = Instantiate(prefab, quizTemplate.transform.position, quizTemplate.transform.rotation);
+            //newInstance.transform.SetParent(quizTemplate.transform, false);
+            //newInstance.transform.localPosition = Vector3.zero;
+            //newInstance.transform.localScale = Vector3.one;
+            //newInstance.name = prefab.name;
+            //newInstance.SetActive(activateInstance);
+
+            //currentInstance = newInstance;
+        }
+    }
+    private IEnumerator InstantiateNewPrefab(GameObject currentInstance, bool activateInstance, GameObject prefab, GameObject quizTemplate)
+    {
+        yield return new WaitForSeconds(0.6f); // Ensure Vuforia is fully reset
+
+        // Instantiate new Image Target prefab
+        currentInstance = Instantiate(prefab, quizTemplate.transform.position, quizTemplate.transform.rotation);
+        currentInstance.transform.SetParent(quizTemplate.transform, false);
+        currentInstance.transform.localPosition = Vector3.zero;
+        currentInstance.transform.localScale = Vector3.one;
+        currentInstance.name = prefab.name;
+        currentInstance.SetActive(activateInstance);
+
+        // Ensure Vuforia starts tracking the new instance
+        StartCoroutine(ResetVuforiaTracking());
+        Debug.Log("New target instantiated and Vuforia tracking reset.");
+    }
+    public IEnumerator ResetVuforiaTracking()
+    {
+        if (VuforiaBehaviour.Instance != null)
+        {
+            VuforiaBehaviour.Instance.enabled = false; // Disable Vuforia
+            yield return new WaitForSeconds(0.5f); // Small delay before re-enabling
+            VuforiaBehaviour.Instance.enabled = true; // Re-enable Vuforia
+            Debug.Log("Vuforia tracking reset.");
         }
     }
     public void OnOpenQuizClick(string quizId)
@@ -155,6 +188,11 @@ public class HandleExerciseActions : MonoBehaviour
                 totalGrade += exercise.grade;
             }
             float average = totalGrade / currentQuiz.chapter.exercises.Length;
+
+            if (average < 5)
+            {
+                totalPoints = 0;
+            }
 
             GameObject gameOverDialog = quizDialogs.transform.Find("GameOverDialog").gameObject;
             GameObject successDialog = quizDialogs.transform.Find("SuccessDialog").gameObject;
@@ -327,7 +365,7 @@ public class HandleExerciseActions : MonoBehaviour
         Destroy(currentInstance);
 
         currentInstance = Instantiate(Game0022Prefab, GamesCanvas.transform.position, GamesCanvas.transform.rotation);
-        currentInstance.transform.SetParent(GamesCanvas.transform, false); 
+        currentInstance.transform.SetParent(GamesCanvas.transform, false);
         currentInstance.transform.localPosition = Vector3.zero;
         currentInstance.transform.localScale = Vector3.one;
         currentInstance.name = instanceName;

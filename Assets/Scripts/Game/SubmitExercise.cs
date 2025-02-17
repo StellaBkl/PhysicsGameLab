@@ -59,11 +59,13 @@ public class SubmitExercise : MonoBehaviour
         //starts deducting points after 30secs
         if (totalSeconds > standardSeconds)
         {
-            int totalPointsToDeduct = (totalSeconds - standardSeconds) * 2;
+            float pointsSelected = (totalSeconds - standardSeconds) * 0.5f;
+            int totalPointsToDeduct = Mathf.FloorToInt(pointsSelected);
+            //int totalPointsToDeduct = (totalSeconds - standardSeconds) * 2;
 
             points -= totalPointsToDeduct;
         }
-        points = Mathf.Max(points, 10);
+        points = Mathf.Max(points, 20);
 
         return points;
     }

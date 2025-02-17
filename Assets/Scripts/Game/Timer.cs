@@ -54,8 +54,8 @@ public class Timer : MonoBehaviour
         {
             isRunning = true;
            // startTime = Time.time;
-            Debug.Log(elapsedTime);
-            Debug.Log(stringTime);
+            //Debug.Log(elapsedTime);
+            //Debug.Log(stringTime);
         }
     }
     public void StopTimer()
@@ -64,8 +64,8 @@ public class Timer : MonoBehaviour
         {
             isRunning = false;
             //stopTime = Time.time;
-            Debug.Log(elapsedTime);
-            Debug.Log(stringTime);
+            //Debug.Log(elapsedTime);
+            //Debug.Log(stringTime);
         }
     }
     public void ResetTimer()
@@ -75,7 +75,7 @@ public class Timer : MonoBehaviour
             isRunning = true;
             elapsedTime = 0;
             stringTime = "00:00";
-            Debug.Log(elapsedTime);
+            //Debug.Log(elapsedTime);
         }
     }
 

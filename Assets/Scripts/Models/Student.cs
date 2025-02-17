@@ -13,9 +13,9 @@ public struct Student
     [FirestoreProperty]
     public string studentUsername { get; set; }
     [FirestoreProperty]
-    public byte[] passwordHash { get; set; }
+    public string passwordHash { get; set; }
     [FirestoreProperty]
-    public byte[] passwordSalt { get; set; }
+    public string passwordSalt { get; set; }
     [FirestoreProperty]
     public string teacherEmail { get; set; }
     [FirestoreProperty]

@@ -49,6 +49,18 @@ public class HandleVuforiaTarget : MonoBehaviour
         // Add logic when target is lost
     }
 
+    public IEnumerator ResetVuforiaTracking()
+    {
+        Debug.Log("Vuforia tracking reset.");
+        if (VuforiaBehaviour.Instance != null)
+        {
+            VuforiaBehaviour.Instance.enabled = false; // Disable Vuforia
+            yield return new WaitForSeconds(0.5f); // Small delay before re-enabling
+            VuforiaBehaviour.Instance.enabled = true; // Re-enable Vuforia
+            Debug.Log("Vuforia tracking reset.");
+        }
+    }
+
     void OnDestroy()
     {
         if (observer != null)

@@ -3126,8 +3126,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 343397114}
   m_TextComponent: {fileID: 365828235}
   m_Placeholder: {fileID: 2073618039}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -5471,7 +5471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &544550571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14542,8 +14542,8 @@ MonoBehaviour:
   m_text: "\u03A3\u03AF\u03B3\u03BF\u03C5\u03C1\u03B1 \u03B8\u03AD\u03BB\u03B5\u03C4\u03B5
     \u03BD\u03B1 \u03B1\u03C0\u03BF\u03C7\u03C9\u03C1\u03AE\u03C3\u03B5\u03C4\u03B5;"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14573,7 +14573,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -14816,8 +14816,8 @@ MonoBehaviour:
     \u03C0\u03B1\u03AF\u03B6\u03B5\u03C4\u03B5 \u03C4\u03B1 \u03C0\u03B1\u03B9\u03C7\u03BD\u03AF\u03B4\u03B9\u03B1
     \u03C4\u03B7\u03C2 \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE\u03C2."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7854c3d0df3397e409013ebe0338dbe0, type: 2}
+  m_sharedMaterial: {fileID: -5156902154702962369, guid: 7854c3d0df3397e409013ebe0338dbe0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
